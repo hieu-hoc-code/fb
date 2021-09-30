@@ -10,6 +10,12 @@
       justify-content: flex-start;
       align-items: center;
       margin-bottom: 10px;
+      cursor: pointer;
+      padding: 5px 10px;
+      &:hover {
+        background-color: #d6d6d6;
+        border-radius: 16px;
+      }
       img {
         height: 35px;
         width: 35px;
