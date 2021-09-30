@@ -1,0 +1,13 @@
+@import 'scss/_setting.scss';
+
+.App{
+  .App-header{
+    background-color: aquamarine;
+  }
+  .app-body{
+    display: grid;
+    grid-template-columns: 23% 54% 23%;
+    background-color: $app-conten-bg-color;
+    height: calc(100vh - 54px);
+  }
+}

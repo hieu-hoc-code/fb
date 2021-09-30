@@ -1,0 +1,153 @@
+@import '../../scss/_setting.scss';
+
+.home{
+  display: grid;
+  margin: 22px auto;
+  justify-content: center;
+  .story{
+    width: 590px;
+    height: 198px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 8px 0 24px;
+    .st{
+      border-radius: 12px;
+      background-color: white;
+      margin-right: 12px;
+      box-shadow: 0 0 2px #aaa;
+      cursor: pointer;
+      &:hover{
+        background-color: $app-bg-input;
+      }
+      
+    }
+    .story-content{
+      img{
+        width: 106px;
+        height: 70%;
+        border-radius: 12px 12px 0 0;
+        position: relative;
+      }
+      ::after{
+        position: absolute;
+        content: "+";
+        width: 30px;
+        height: 30px;
+        top: -30px;
+        left: 20%;
+        background-color: #1776f2;
+        border-radius: 20px;
+        border: 3px solid white;
+        font-size: 18px;
+        color: white;
+      }
+      .create{
+        height: 30%;
+        text-align: center;
+        span{
+          display: inline-block;
+          transform: translateY(100%);
+          text-align: center;
+        }
+      }
+    }
+    .story-you{
+      cursor: pointer;
+      img.main{
+        width: 106px;
+        height: 100%;
+        border-radius: 12px 12px;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+          
+        }
+      }
+      img.you{
+        position: absolute;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        transform: translate(-100px, 10px);
+        border-radius: 50%;
+        border: 3px solid blue;
+        cursor: pointer;
+      }
+    }
+  }
+  .posts{
+    height: 124px;
+    display: grid;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(197, 197, 197);
+    padding: 12px 16px;
+    border-radius: 12px;
+    .po{
+      display: flex;
+      align-items: center;
+      img{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 12px;
+      }
+      input{
+        width: 100%;
+        padding: 8px 12px;
+        border: none;
+        outline: none;
+        background-color: $app-bg-input;
+        border-radius: 20px;
+        &:hover{
+          background-color: darken($app-bg-input, 10);
+        }
+      }
+    }
+    .video{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .items{
+        padding: 8px 10px;
+        border-radius: 12px;
+        cursor: pointer;
+        &:hover{
+          background-color: $app-bg-input;
+        }
+        i{
+          margin-right: 12px;
+          font-size: 14px;
+        }
+        span{
+          color: #333;
+        }
+        i.fa-camera-retro{
+          color: rgb(233, 66, 66);
+        }
+        i.fa-file-photo-o{
+          color: rgb(94, 233, 66);
+        }
+        i.fa-smile-o{
+          color: rgb(240, 226, 35);
+        }
+      }
+    }
+  }
+  .meeting{
+    margin-top: 16px;
+    display: flex;
+    padding: 8px 12px;
+    box-shadow: 0 0 3px #bbb;
+    border-radius: 12px;
+    .items-metting{
+      flex: 100%;
+      i{
+        font-size: 24px;
+      }
+    }
+    .nex{
+      flex: 10%;
+    }
+  }
+}
