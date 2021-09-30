@@ -10,7 +10,7 @@ class Home extends Component {
       <div className="home">
         <div className="story">
           <div className="st story-content">
-            <img src={Ava} alt="story your" />
+            <img src={Ava} alt="story your"/>
             <div className="create">
             <span>Tạo tin</span>
             </div>
